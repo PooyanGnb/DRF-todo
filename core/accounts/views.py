@@ -5,17 +5,13 @@ from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.shortcuts import redirect
 
-# Create your views here.
-
-
 class CustomLoginView(LoginView):
     template_name = "accounts/login.html"
-    fields = "username","password"
+    fields = "username", "password"
     redirect_authenticated_user = True
 
     def get_success_url(self):
         return reverse_lazy("task_list")
-
 
 class RegisterPage(FormView):
     template_name = "accounts/register.html"
