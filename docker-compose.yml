@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: .
+    container_name: tododrf
+    command: python manage.py runserver 0.0.0.0:8001
+    volumes:
+      - ./core:/app
+    ports:
+      - "8001:8000"
+    environment:
+      - SECRET_KEY=test
+      - DEBUG=True
