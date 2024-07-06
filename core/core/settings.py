@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     # apps
     'accounts',
     'todo',
+    
+    # external modules
+    'rest_framework',
+    "django_filters"
 ]
 
 MIDDLEWARE = [
@@ -134,4 +138,3 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
