@@ -5,3 +5,4 @@ djangorestframework
 markdown
 django-filter
 coreapi
+drf-yasg[validation]

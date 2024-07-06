@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     
     # external modules
     'rest_framework',
-    "django_filters"
+    "django_filters",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
