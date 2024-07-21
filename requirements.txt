@@ -2,7 +2,9 @@ django >4.2,<4.3
 python-decouple
 pillow
 djangorestframework
+djangorestframework-simplejwt
 markdown
 django-filter
 coreapi
 drf-yasg[validation]
+django-mail-templated
